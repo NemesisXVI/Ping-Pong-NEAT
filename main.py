@@ -16,6 +16,7 @@ class PongGame:
         self.right_paddle = self.game.right_paddle
         self.ball=self.game.ball
 
+    #Used in Play_AI
     def test_ai(self,genome,config):
         net=neat.nn.FeedForwardNetwork.create(genome,config)
         run = True
