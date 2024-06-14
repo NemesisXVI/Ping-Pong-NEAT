@@ -15,7 +15,7 @@ def test_ai(config):
 
 if __name__ == "__main__":
     loca_dir = os.path.dirname(__file__)
-    config_path = os.path.join(loca_dir, "../NEAT-Ping_Pong/config.txt")
+    config_path = os.path.join(loca_dir, "config.txt")
 
     config = neat.Config(neat.DefaultGenome, neat.DefaultReproduction,
                          neat.DefaultSpeciesSet, neat.DefaultStagnation,
