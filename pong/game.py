@@ -70,16 +70,20 @@ class Game:
         left_paddle = self.left_paddle
         right_paddle = self.right_paddle
 
+        # For reflection of ball on touching the top or bottom edge.
         if ball.y + ball.RADIUS >= self.window_height:
             ball.y_vel *= -1
         elif ball.y - ball.RADIUS <= 0:
             ball.y_vel *= -1
 
+        # For collision of ball with paddle
         if ball.x_vel < 0:
             if ball.y >= left_paddle.y and ball.y <= left_paddle.y + Paddle.HEIGHT:
                 if ball.x - ball.RADIUS <= left_paddle.x + Paddle.WIDTH:
                     ball.x_vel *= -1
 
+                    # Changes the y velocity of the ball after collision.
+                    # Makes sure that angle changes otherwise ball would get stuck in an infinite loop between the 2 paddles.
                     middle_y = left_paddle.y + Paddle.HEIGHT / 2
                     difference_in_y = middle_y - ball.y
                     reduction_factor = (Paddle.HEIGHT / 2) / ball.MAX_VEL
