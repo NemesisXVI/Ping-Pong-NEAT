@@ -43,7 +43,7 @@ The controls for the Paddles are:
 4. 'Down Arrow' : Move Right Paddle Down
 
 The Game Looks like this:
-![alt text](E:\Python\Ping-Pong-NEAT\GameWIndow.png)
+![alt text](GameWIndow.png)
 
 ### 2. Train AI
 Run the file **'main.py'** to start training the AI using the NEAT algorithm.
