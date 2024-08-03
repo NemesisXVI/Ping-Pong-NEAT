@@ -40,7 +40,10 @@ The controls for the Paddles are:
 1. 'W' : Move Left Paddle Up
 2. 'S' : Move Left Paddle Down
 3. 'Up Arrow' : Move Right Paddle Up
-4. 'Down Arrow' : Move Righ Paddle Down
+4. 'Down Arrow' : Move Right Paddle Down
+
+The Game Looks like this:
+![alt text](E:\Python\Ping-Pong-NEAT\GameWIndow.png)
 
 ### 2. Train AI
 Run the file **'main.py'** to start training the AI using the NEAT algorithm.
@@ -55,7 +58,7 @@ To play against the trained AI model, run the file **'Play_AI.py'** to start the
 python Play_AI.py
 ```
 
-## Understanding the NEAT ALgorithm
+## Understanding the NEAT Algorithm
 NEAT (NeuroEvolution of Augmenting Topologies) is an evolutionary algorithm that generates artificial neural networks (ANNs).
 NEAT evolves both the topology and the weights of neural networks, allowing it to discover both the structure and the parameters of effective neural networks.
 The key concepts of NEAT are:
