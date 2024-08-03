@@ -105,6 +105,8 @@ Check out the following for more information on NEAT algorithm:
 7. **Number of Outputs** : Set to 3.
 
 These are the most important parameters in the config file, do check out the other parameters as well for better understanding.
+### Worflow of the Algorithm
+![alt text](WorkFlow.png)
 ### Inputs and Outputs
 #### Inputs:
 I am giving 3 inputs to the NEAT algorithm for each genome which are as follows:
